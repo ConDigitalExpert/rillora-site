@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rillora development, support and privacy information.">
+<title>Rillora support</title>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="index.html">Rill<span>ora</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="support.html">Support</a>
+<a href="privacy.html">Privacy</a>
+</nav>
+</header>
+<main id="main">
+<article class="article">
+<p class="eyebrow">Support</p>
+<h1>A little help<br>with your library.</h1>
+<p class="lede">Rillora is still in development. This page covers the current connection and playback workflow.</p>
+<h2>Get started</h2>
+<ol>
+<li>Use the included synthetic demo to explore the library and guide.</li>
+<li>Add an M3U playlist URL or an Xtream service address with credentials from a provider you are authorized to use.</li>
+<li>Add an optional XMLTV guide URL to the same connection. Load the guide, choose a programme, then watch the matching channel live.</li>
+</ol>
+<h2>A connection will not load</h2>
+<p>Check the address, account status and credentials with your provider. If a connection appears from another device, it may need credentials and a catalog refresh on this device. Guide playback matches provider EPG IDs first; ambiguous names do not automatically tune a channel.</p>
+<h2>A video will not play</h2>
+<p>Check your network and try refreshing the connection. Current development playback uses formats supported by the platform's native player. Broader codec and custom-header support are still being verified. A successful connection does not guarantee that every media format will play.</p>
+<h2>Across your devices</h2>
+<p>Optional private iCloud library sync is being verified before launch. It is not yet a verified production capability. Credentials stay local by default; the credential-sync setting is a separate opt-in.</p>
+<h2>Report a problem</h2>
+<p>Include the device model, OS version, app version and a short sequence of steps. Use synthetic examples when possible. <strong>Do not post passwords, usernames, complete provider URLs, private catalogs or unredacted logs.</strong> Reports on GitHub are public.</p>
+<a class="button" href="https://github.com/ConDigitalExpert/rillora-site/issues/new?template=bug_report.yml">Open a support report</a>
+<p>For privacy questions, use the same support channel and describe the question without including private account information.</p>
+</article>
+</main>
+<footer>
+<span>Rillora · In development</span>
+<span>
+<a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="https://github.com/ConDigitalExpert/rillora-site">Site source</a>
+</span>
+</footer>
+</body>
+</html>
