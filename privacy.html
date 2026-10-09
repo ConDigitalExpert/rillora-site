@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rillora development, support and privacy information.">
+<title>Rillora privacy information</title>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="index.html">Rill<span>ora</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="support.html">Support</a>
+<a href="privacy.html">Privacy</a>
+</nav>
+</header>
+<main id="main">
+<article class="article">
+<p class="eyebrow">Privacy</p>
+<h1>Your information<br>and Rillora.</h1>
+<p class="lede">Updated October 9, 2026. This describes the current development design. The final signed app and any additional playback libraries will be reviewed before an App Store release.</p>
+<h2>Information kept on your device</h2>
+<p>Rillora saves connection information, cached catalog metadata, favorites, watch progress, bookmarks, category choices and playback preferences. Its local repository encrypts saved connection and library data; connection secrets use the platform Keychain. These safeguards do not replace the security of your device or provider.</p>
+<h2>Connections to your sources</h2>
+<p>The app contacts the media, artwork and programme-guide endpoints you configure. Your provider can receive your IP address and information needed to service requests, including credentials where required. Those services have their own privacy practices. HTTP connections do not provide transport encryption; prefer HTTPS where your provider supports it.</p>
+<h2>Optional iCloud sync</h2>
+<p>When available and enabled, private CloudKit sync sends library changes to your Apple iCloud account using encrypted record payloads. Connection credentials remain local unless you separately opt into syncing them. Provider catalogs are cached on each device. Sync is still undergoing release verification.</p>
+<h2>Advertising and analytics</h2>
+<p>The current app has no advertising, analytics SDK or developer-run account service. Rillora's developer does not operate a server receiving your media library or credentials. Any additional SDK's data practices must be reviewed before it is included in a release; the App Store privacy disclosure will be checked against the actual shipped app.</p>
+<h2>Removing information</h2>
+<p>Removing a connection deletes its local credentials and cached catalog and marks associated library entries for deletion. If sync is enabled, deletion changes are sent when sync can connect. Turning sync off does not itself erase information already stored in iCloud. Removing the app is not a promise that every Keychain or iCloud record is removed.</p>
+<h2>This support website</h2>
+<p>This site uses no advertising scripts, analytics scripts or embedded third-party media. GitHub Pages hosts it and logs visitor IP addresses for security, as described in <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub's hosting documentation</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>.</p>
+<p>If you choose to submit a support issue, GitHub handles the account and submitted information under its policies. Issues are public; do not include sensitive connection information.</p>
+<h2>Questions and changes</h2>
+<p>Contact the Rillora development team through the <a href="support.html">support page</a>. This page will be updated when release features or data practices change. It does not substitute for the final App Store privacy disclosure.</p>
+</article>
+</main>
+<footer>
+<span>Rillora · In development</span>
+<span>
+<a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="https://github.com/ConDigitalExpert/rillora-site">Site source</a>
+</span>
+</footer>
+</body>
+</html>

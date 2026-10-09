@@ -1,0 +1,27 @@
+name: Support report
+description: Report a Rillora issue using safe, public information.
+title: '[Support] '
+body:
+  - type: markdown
+    attributes:
+      value: 'This report is public. Never include provider credentials, complete provider URLs, private catalogs or unredacted logs. Rillora is currently in development.'
+  - type: input
+    id: device
+    attributes:
+      label: Device and OS version
+      placeholder: iPhone model, iOS version
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and expected result
+      description: Use synthetic examples. Describe what happened and what you expected.
+    validations:
+      required: true
